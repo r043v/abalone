@@ -1,0 +1,122 @@
+
+
+
+abalone, rapport
+
+I __ Developpement
+
+		- génération du plateau de jeux
+			
+			la difficultée, réside dans le fait que les cases sont hexagonales,
+			 une gestion classique par un tableau en 2d n'est donc pas possible,
+			 surtout avec les contraintes de non 'gaspillage' de memoire
+			
+			au premier abord, nous avons voulu faire une génération et gestion 'récursive',
+			 cad une case racine (et centrale) dans le plateau, qui crée ses 6 seurettes,
+			 qui créent elles meme à leur tour leurs cases adjacentes
+			 et ainsi de suite jusqu'a atteindre le bord du plateau.
+			 cette solution etait de loin la plus simple, mais également la plus compliquée,
+			 car il fallait lier les cases entres elles, pour pouvoir les gerer comme une liste chainée,
+			 et surtout, eviter les doublons
+			
+			nous avons donc décidé de gerer le plateau par colones, et de creer
+			 un ensemble de fonction pour pouvoir trouver les cases adjacentes facilement
+			 la taille donné en argument du constructeur de la classe abalone definie la taille du plateau,
+			 cette taille correspond aux nombre de pions entre la case centrale et le bord du plateau (4 par default)
+			 suivant cette taille nous calculons le nombre de cases de chaque colones
+			 une fois les colones définie en memoire, il nous reste a remplir les 2 premieres colones de pions,
+			 et remplir de pions à la moitié arondie à l'inferieur le contenu de la 3eme colone.
+			
+		- gestion des cases adjacentes
+		
+			avant de pouvoir faire le moteur de jeux et gerer les deplacements, il fallait déjà pouvoir
+			 trouver les cases adjacentes de nimporte quelle case, ce calcul s'est révélé assez simple,
+			 pour une case, suivant quelle se trouve, a gauche, a droite ou sur la colone centrale,
+			 il y a des regles strictes définissant son deplacement,
+			 exemple : pour une case à gauche de la centrale, se deplaçant vers le bas et la droite,
+			 seule la colone de destination va changer (colon++) alors que la ligne de destination ne changera pas,
+			 ceci grace à l'hexagonalité des cases.
+
+		- deplacement de pions
+		
+			nous avons dabord mis en place la gestion du deplacement d'un seul pion,
+			 il fallait simplement regarder le contenu de la case de destination,
+			 et de celle juste deriere pour connaitre si le pion peu etre deplacer, et ses consequences
+			par la suite nous nous sommes attaqués au deplacement par groupe, un groupe possede lui,
+			 un 'vecteur' de deplacement, défini par les 2 extremitées du groupe,
+			 si le deplacement voulue n'etait pas sur ce vecteur, alors nous utilisons pour chaque pion
+			 du groupe, la fonction de deplacement d'un seul pion.
+			 si par contre le sens de deplacement est sur ce vecteur, il nous faut scanner le plateau,
+			 si deriere le groupe il n'y a rien, la gestion est simple,
+			 si deriere il y a un pion adverse, nous scannons le plateau dans le sens de deplacement,
+			 pour savoir le nombre de pion adverse, puis suivant les regles du jeu, si le groupe adverse peut etre deplacé
+			 alors, avec une fonction recurssive nous deplaçons l'ensemble des pions mis en oeuvre dans le deplacement.
+			 
+		- affichage du jeu
+		
+			la console etant géré par lignes, et le jeu par colones, nous avons décidés d'afficher le jeu, tourné de 90°
+			 cela ne nuit en rien à la comprehension du jeu, la seule contrainte etant de convertir les positions
+			 et sens de deplacement entrés par le joueur en coordonnées réelles utilisées par le moteur du jeu.
+			 
+		- classes utilisées dans le jeu
+		
+			* la classe plateau
+				contient les fonctions de lecture ecriture d'une case
+				les fonctions de deplacement, de 'capture' de cases adjacentes, d'affichage du plateau
+				et les fonctions de definition et test de validitée des positions et groupes
+				
+			* la classe abalone
+				contient une instance de la classe plateau
+				contient également tout le moteur de l'ihm
+				et la gestion des joueurs (changement, test de victoire ect ..)
+				pour jouer, declarer une instance de cette classe suffit, elle lance automatiquement la partie
+				et quitte des que celle ci est finie.
+				
+			* la classe log_file
+				contient des fonctions d'ecriture/ajout dans un fichier
+				au travers de fonctions similaires au printf
+				est utilisé pour debuguer plus simplement le jeu
+				
+			* la classe console
+				contient des fonctions permettant de manipuler simplement l'affichage dans la console
+				la aussi, une fonction similaire a printf a été défini
+				cad : une fonction pour afficher un printf colorié de la couleur voulue
+				une fonction pour definir la couleur du texte, une pour effacer stdin (flush)
+				et une pour definir la position du curseur
+			
+			* structures ...
+				pour gerer les positions, nous avons préféré utiliser une simple structure, 'position'
+				 elle contient seulement 2 variables, 'colon' et 'line'
+				 enormement de fonction de la classe plateau l'utilise
+				pour gerer les groupe, une structure 'group' est également definie,
+				 elle contient 3 positions, et des variable definissant à quel joueur ce groupe appartient,
+				 la taille du groupe et sa direction (son vecteur).
+				ces deux structures sont definis dans le fichier 'define.h',
+				qui contient également des macro et constantes et options de compilation (debug)
+
+II __ Utilisation du jeu
+
+			le jeu se lance en l'executant, il n'attend aucun parametre ou fichiers externes.
+			le jeu affiche tout dabord un ecran titre et vous invite à appuyer sur une touche
+			
+			apres cela, le jeu rentre dans sa boucle principale et vous invite à choisir quoi deplacer
+			-> un pion ou un groupe, attention car un groupe ne peu pas contenir un seul pion
+			
+			- deplacement d'un seul pion
+				le jeu vous invite a saisir les coordonnées du pion,
+				 dabord sa ligne, puis le numero de colone de cette ligne
+				puis, le jeu vous demande une direction de deplacement
+				si le deplacement est valide, c'est a l'autre joueur de jouer,
+				 sinon, vous allez devoir resaisir les données...
+				 
+			- deplacement d'un groupe
+				la chose est fortement simillaire au deplacement d'un seul pion,
+				 sauf que le jeu va vous demander une seconde coordonnées
+				 les deux coordonnées vons définir les extremitées du groupe
+				si le groupe est valide, vous allez devoir rentrer une direction
+				puis ce sera à l'autre joueur de jouer, si le deplacement est valide..
+			
+			la partie s'arrete au moment ou un des joueur a perdu 6 de ses pions
+			le jeu indique alors qui a gagné la partie et quitte
+			
+			

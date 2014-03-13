@@ -1,0 +1,225 @@
+creation du plateau..
+taille de jeux : 4
+nombre de colones : 9
+colone 0 .. taille : 5
+colone 1 .. taille : 6
+colone 2 .. taille : 7
+colone 3 .. taille : 8
+colone 4 .. taille 9
+colone 5 .. taille 8
+colone 6 .. taille 7
+colone 7 .. taille 6
+colone 8 .. taille 5
+nombre de pions -> 14 et 14   sur 14
+
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 1	: 2.4	.. valid!
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 2	: 3.4	.. valid!
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 4	: 3.3	.. valid!
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 8	: 2.2	.. valid!
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 16	: 1.2	.. valid!
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 32	: 1.3	.. valid!
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 1	: 2.4	.. valid!
+ * enter getAdjacent with 2.4
+ ** new pos for 2.4 with way 1	: 2.5	.. valid!
+ * enter getAdjacent with 2.4
+ ** new pos for 2.4 with way 2	: 3.5	.. valid!
+ * enter getAdjacent with 2.4
+ ** new pos for 2.4 with way 4	: 3.4	.. valid!
+ * enter getAdjacent with 2.4
+ ** new pos for 2.4 with way 8	: 2.3	.. valid!
+ * enter getAdjacent with 2.4
+ ** new pos for 2.4 with way 16	: 1.3	.. valid!
+ * enter getAdjacent with 2.4
+ ** new pos for 2.4 with way 32	: 1.4	.. valid!
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 2	: 3.4	.. valid!
+ * enter getAdjacent with 3.4
+ ** new pos for 3.4 with way 1	: 3.5	.. valid!
+ * enter getAdjacent with 3.4
+ ** new pos for 3.4 with way 2	: 4.5	.. valid!
+ * enter getAdjacent with 3.4
+ ** new pos for 3.4 with way 4	: 4.4	.. valid!
+ * enter getAdjacent with 3.4
+ ** new pos for 3.4 with way 8	: 3.3	.. valid!
+ * enter getAdjacent with 3.4
+ ** new pos for 3.4 with way 16	: 2.3	.. valid!
+ * enter getAdjacent with 3.4
+ ** new pos for 3.4 with way 32	: 2.4	.. valid!
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 4	: 3.3	.. valid!
+ * enter getAdjacent with 3.3
+ ** new pos for 3.3 with way 1	: 3.4	.. valid!
+ * enter getAdjacent with 3.3
+ ** new pos for 3.3 with way 2	: 4.4	.. valid!
+ * enter getAdjacent with 3.3
+ ** new pos for 3.3 with way 4	: 4.3	.. valid!
+ * enter getAdjacent with 3.3
+ ** new pos for 3.3 with way 8	: 3.2	.. valid!
+ * enter getAdjacent with 3.3
+ ** new pos for 3.3 with way 16	: 2.2	.. valid!
+ * enter getAdjacent with 3.3
+ ** new pos for 3.3 with way 32	: 2.3	.. valid!
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 8	: 2.2	.. valid!
+ * enter getAdjacent with 2.2
+ ** new pos for 2.2 with way 1	: 2.3	.. valid!
+ * enter getAdjacent with 2.2
+ ** new pos for 2.2 with way 2	: 3.3	.. valid!
+ * enter getAdjacent with 2.2
+ ** new pos for 2.2 with way 4	: 3.2	.. valid!
+ * enter getAdjacent with 2.2
+ ** new pos for 2.2 with way 8	: 2.1	.. valid!
+ * enter getAdjacent with 2.2
+ ** new pos for 2.2 with way 16	: 1.1	.. valid!
+ * enter getAdjacent with 2.2
+ ** new pos for 2.2 with way 32	: 1.2	.. valid!
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 16	: 1.2	.. valid!
+ * enter getAdjacent with 1.2
+ ** new pos for 1.2 with way 1	: 1.3	.. valid!
+ * enter getAdjacent with 1.2
+ ** new pos for 1.2 with way 2	: 2.3	.. valid!
+ * enter getAdjacent with 1.2
+ ** new pos for 1.2 with way 4	: 2.2	.. valid!
+ * enter getAdjacent with 1.2
+ ** new pos for 1.2 with way 8	: 1.1	.. valid!
+ * enter getAdjacent with 1.2
+ ** new pos for 1.2 with way 16	: 0.1	.. valid!
+ * enter getAdjacent with 1.2
+ ** new pos for 1.2 with way 32	: 0.2	.. valid!
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 32	: 1.3	.. valid!
+ * enter getAdjacent with 1.3
+ ** new pos for 1.3 with way 1	: 1.4	.. valid!
+ * enter getAdjacent with 1.3
+ ** new pos for 1.3 with way 2	: 2.4	.. valid!
+ * enter getAdjacent with 1.3
+ ** new pos for 1.3 with way 4	: 2.3	.. valid!
+ * enter getAdjacent with 1.3
+ ** new pos for 1.3 with way 8	: 1.2	.. valid!
+ * enter getAdjacent with 1.3
+ ** new pos for 1.3 with way 16	: 0.2	.. valid!
+ * enter getAdjacent with 1.3
+ ** new pos for 1.3 with way 32	: 0.3	.. valid!
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 1	: 2.4	.. valid!
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 2	: 3.4	.. valid!
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 4	: 3.3	.. valid!
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 8	: 2.2	.. valid!
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 16	: 1.2	.. valid!
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 32	: 1.3	.. valid!
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 1	: 2.4	.. valid!
+ * enter getAdjacent with 2.4
+ ** new pos for 2.4 with way 1	: 2.5	.. valid!
+ * enter getAdjacent with 2.4
+ ** new pos for 2.4 with way 2	: 3.5	.. valid!
+ * enter getAdjacent with 2.4
+ ** new pos for 2.4 with way 4	: 3.4	.. valid!
+ * enter getAdjacent with 2.4
+ ** new pos for 2.4 with way 8	: 2.3	.. valid!
+ * enter getAdjacent with 2.4
+ ** new pos for 2.4 with way 16	: 1.3	.. valid!
+ * enter getAdjacent with 2.4
+ ** new pos for 2.4 with way 32	: 1.4	.. valid!
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 2	: 3.4	.. valid!
+ * enter getAdjacent with 3.4
+ ** new pos for 3.4 with way 1	: 3.5	.. valid!
+ * enter getAdjacent with 3.4
+ ** new pos for 3.4 with way 2	: 4.5	.. valid!
+ * enter getAdjacent with 3.4
+ ** new pos for 3.4 with way 4	: 4.4	.. valid!
+ * enter getAdjacent with 3.4
+ ** new pos for 3.4 with way 8	: 3.3	.. valid!
+ * enter getAdjacent with 3.4
+ ** new pos for 3.4 with way 16	: 2.3	.. valid!
+ * enter getAdjacent with 3.4
+ ** new pos for 3.4 with way 32	: 2.4	.. valid!
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 4	: 3.3	.. valid!
+ * enter getAdjacent with 3.3
+ ** new pos for 3.3 with way 1	: 3.4	.. valid!
+ * enter getAdjacent with 3.3
+ ** new pos for 3.3 with way 2	: 4.4	.. valid!
+ * enter getAdjacent with 3.3
+ ** new pos for 3.3 with way 4	: 4.3	.. valid!
+ * enter getAdjacent with 3.3
+ ** new pos for 3.3 with way 8	: 3.2	.. valid!
+ * enter getAdjacent with 3.3
+ ** new pos for 3.3 with way 16	: 2.2	.. valid!
+ * enter getAdjacent with 3.3
+ ** new pos for 3.3 with way 32	: 2.3	.. valid!
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 8	: 2.2	.. valid!
+ * enter getAdjacent with 2.2
+ ** new pos for 2.2 with way 1	: 2.3	.. valid!
+ * enter getAdjacent with 2.2
+ ** new pos for 2.2 with way 2	: 3.3	.. valid!
+ * enter getAdjacent with 2.2
+ ** new pos for 2.2 with way 4	: 3.2	.. valid!
+ * enter getAdjacent with 2.2
+ ** new pos for 2.2 with way 8	: 2.1	.. valid!
+ * enter getAdjacent with 2.2
+ ** new pos for 2.2 with way 16	: 1.1	.. valid!
+ * enter getAdjacent with 2.2
+ ** new pos for 2.2 with way 32	: 1.2	.. valid!
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 16	: 1.2	.. valid!
+ * enter getAdjacent with 1.2
+ ** new pos for 1.2 with way 1	: 1.3	.. valid!
+ * enter getAdjacent with 1.2
+ ** new pos for 1.2 with way 2	: 2.3	.. valid!
+ * enter getAdjacent with 1.2
+ ** new pos for 1.2 with way 4	: 2.2	.. valid!
+ * enter getAdjacent with 1.2
+ ** new pos for 1.2 with way 8	: 1.1	.. valid!
+ * enter getAdjacent with 1.2
+ ** new pos for 1.2 with way 16	: 0.1	.. valid!
+ * enter getAdjacent with 1.2
+ ** new pos for 1.2 with way 32	: 0.2	.. valid!
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 32	: 1.3	.. valid!
+ * enter getAdjacent with 1.3
+ ** new pos for 1.3 with way 1	: 1.4	.. valid!
+ * enter getAdjacent with 1.3
+ ** new pos for 1.3 with way 2	: 2.4	.. valid!
+ * enter getAdjacent with 1.3
+ ** new pos for 1.3 with way 4	: 2.3	.. valid!
+ * enter getAdjacent with 1.3
+ ** new pos for 1.3 with way 8	: 1.2	.. valid!
+ * enter getAdjacent with 1.3
+ ** new pos for 1.3 with way 16	: 0.2	.. valid!
+ * enter getAdjacent with 1.3
+ ** new pos for 1.3 with way 32	: 0.3	.. valid!
+** deplacement d'un groupe ** ** group of 3 case, way 32 [2.3] [1.3] [0.3]
+	deplacement dans le sens du groupe
+** group of 3 case, way 32 [2.3] [1.3] [0.3]
+	inversion du groupe -> ** group of 3 case, way 32 [2.3] [1.3] [0.3]
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 4	: 3.3	.. valid!
+ * enter getAdjacent with 2.3
+ ** new pos for 2.3 with way 4	: 3.3	.. valid!
+ * deplacement d'un pion
+	destination vide, deplacement direct du pion..
+ * enter getAdjacent with 1.3
+ ** new pos for 1.3 with way 4	: 2.3	.. valid!
+ * deplacement d'un pion
+	destination vide, deplacement direct du pion..
+ * enter getAdjacent with 0.3
+ ** new pos for 0.3 with way 4	: 1.3	.. valid!
+ * deplacement d'un pion
+	destination vide, deplacement direct du pion..
+case de destination vide
